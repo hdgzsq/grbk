@@ -8,7 +8,7 @@ NEXT_PUBLIC_SITE_URL = "https://your-domain.pages.dev"
 # Next.js build
 [build]
 command = "npm run build"
-output_dir = ".next"
+output_dir = "out"
 
 # Tell Cloudflare Pages this is a Next.js static site
-pages_build_output_dir = ".next"
+pages_build_output_dir = "out"
