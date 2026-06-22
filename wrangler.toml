@@ -1,0 +1,16 @@
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://your-domain.pages.dev"
+
+[build]
+command = "npm run build"
+output_dir = ".next"
+
+[build.watch]
+dir = "src"
+watch_path = ["src", "content"]
+
+# Next.js specific
+[env.production]
+[env.production.build]
+command = "npm run build"
+output_dir = ".next"
