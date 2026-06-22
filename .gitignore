@@ -37,5 +37,3 @@ next-env.d.ts
 .vscode/
 .idea/
 
-# Content
-content/

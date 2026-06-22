@@ -1,0 +1,53 @@
+﻿---
+title: ""项目开发日志 Day 1""
+date: ""2026-06-22""
+status: ""进行中""
+techStack: [""Next.js"", ""Tailwind CSS"", ""MDX"", ""Framer Motion""]
+excerpt: ""个人博客网站的第一天开发记录，完成了项目初始化、目录结构搭建和核心组件开发。""
+---
+
+## 今日完成
+
+- [x] 项目初始化（Next.js 15 + TypeScript）
+- [x] 目录结构搭建
+- [x] 全局样式设计（半液态玻璃态）
+- [x] 核心组件开发
+  - AnimatedBackground
+  - GradientNav
+  - GlassCard
+  - ArticleCard
+  - MDXRenderer
+- [x] 所有页面路由
+- [x] 示例内容创建
+
+## 技术要点
+
+### 流体背景
+
+使用多个模糊渐变球体配合 CSS 动画实现：
+
+`css
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+`
+
+### 毛玻璃卡片
+
+`css
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+`
+
+## 明日计划
+
+- 完善 MDX 渲染器的代码高亮
+- 添加搜索功能
+- 优化移动端适配
+- 接入评论系统

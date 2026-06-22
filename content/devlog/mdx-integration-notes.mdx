@@ -1,0 +1,28 @@
+﻿---
+title: "MDX 集成踩坑记录"
+date: "2026-06-21"
+status: "已完成"
+techStack: ["MDX", "Next.js", "gray-matter"]
+excerpt: "在集成 MDX 过程中遇到的一些问题和解决方案。"
+---
+
+## 遇到的问题
+
+### 1. Frontmatter 解析
+
+使用 gray-matter 解析 YAML frontmatter 时，需要注意数组格式的 tags 字段。
+
+### 2. 静态生成参数
+
+generateStaticParams 需要在服务端读取文件系统来获取所有 MDX 文件的 slug。
+
+## 解决方案
+
+通过 fs.readFileSync 直接读取 content 目录下的 .mdx 文件，配合正则表达式提取 slug。
+
+`	ypescript
+const files = fs.readdirSync(path.join(process.cwd(), 'content', 'blog'));
+return files
+  .filter((f) => f.endsWith('.mdx'))
+  .map((f) => ({ slug: f.replace('.mdx', '') }));
+`

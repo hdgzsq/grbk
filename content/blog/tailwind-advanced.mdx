@@ -1,0 +1,46 @@
+﻿---
+title: ""Tailwind CSS 高级技巧""
+date: ""2026-06-21""
+tags: [""技术"", ""CSS"", ""Tailwind""]
+category: ""技术分享""
+excerpt: ""分享一些 Tailwind CSS 的高级用法和设计技巧，让你的网站更加精致。""
+---
+
+## 前言
+
+Tailwind CSS 是一个非常实用的原子化 CSS 框架，用好它可以让开发效率倍增。
+
+## 自定义动画
+
+`css
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+}
+`
+
+## 毛玻璃效果
+
+使用 ackdrop-filter 可以实现漂亮的毛玻璃效果：
+
+`css
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+`
+
+## 渐变文字
+
+`css
+.gradient-text {
+  background: linear-gradient(135deg, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+`
+
+掌握这些技巧，你的网站会看起来更加专业。
