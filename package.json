@@ -1,0 +1,34 @@
+{
+    "version":  "1.0.0",
+    "name":  "012-personal-blog",
+    "scripts":  {
+                    "lint":  "next lint",
+                    "build":  "next build",
+                    "dev":  "next dev",
+                    "start":  "next start"
+                },
+    "devDependencies":  {
+                            "tailwindcss":  "^4.1.0",
+                            "postcss":  "^8.5.0",
+                            "@types/react-dom":  "^19.0.0",
+                            "@types/node":  "^22.0.0",
+                            "@tailwindcss/postcss":  "^4.1.0",
+                            "autoprefixer":  "^10.4.0",
+                            "@types/react":  "^19.0.0",
+                            "typescript":  "^5.7.0",
+                            "framer-motion":  "^12.0.0"
+                        },
+    "dependencies":  {
+                         "react":  "^19.0.0",
+                         "@tailwindcss/typography":  "^0.5.19",
+                         "rehype-slug":  "^6.0.0",
+                         "next":  "^15.4.0",
+                         "sharp":  "^0.34.0",
+                         "react-dom":  "^19.0.0",
+                         "remark-gfm":  "^4.0.1",
+                         "rehype-highlight":  "^7.0.2",
+                         "gray-matter":  "^4.0.3",
+                         "next-mdx-remote":  "^5.0.0"
+                     },
+    "private":  true
+}
