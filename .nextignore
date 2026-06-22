@@ -1,0 +1,3 @@
+.next/cache/
+.next/server/webpack-runtime.js
+.next/server/interception-route-rewrite-workaround.js

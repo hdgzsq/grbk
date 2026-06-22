@@ -1,16 +1,14 @@
+# Cloudflare Pages configuration
+name = "grbk"
+compatibility_date = "2026-06-22"
+
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://your-domain.pages.dev"
 
+# Next.js build
 [build]
 command = "npm run build"
 output_dir = ".next"
 
-[build.watch]
-dir = "src"
-watch_path = ["src", "content"]
-
-# Next.js specific
-[env.production]
-[env.production.build]
-command = "npm run build"
-output_dir = ".next"
+# Tell Cloudflare Pages this is a Next.js static site
+pages_build_output_dir = ".next"
